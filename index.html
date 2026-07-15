@@ -896,7 +896,7 @@ function renderAdminStudents(){
   const filtered = DB.students.filter(s=> !studentsFilterCls || s.cls===studentsFilterCls);
   mainEl().innerHTML = `
     <h2 class="panel-title">Students & Logins</h2>
-    <p class="panel-sub">Each student logs in with Class + Roll Number + Password. Passwords are stored as plain text in this local file — fine for a school demo, not for production security.</p>
+    
     <div class="card">
       <div class="inline-form">
         <div class="f"><label>Full name</label><input class="txt" id="newStuName" placeholder="Student name"></div>
